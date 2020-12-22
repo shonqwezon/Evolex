@@ -26,7 +26,7 @@ bot.on('message', (msg) => {
         if(args.length == 0) args = null;
 
         if(comm != null) { if(comm.out(bot, msg, args)) msg.delete(); }
-        else msg.channel.send("Данной команды не существует!");
+        else msg.channel.send("`Данной команды не существует!`");
             
     }
   });
